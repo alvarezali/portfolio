@@ -9,7 +9,7 @@ export const Navbar = () => {
     <div className='nav-container'>
         <img className='nav-img' src={logo} alt="logo" />
         <ul className='nav-ul'>
-            {menuItemsData.map(item => <MenuItem item={item.title} subitem={item.submenu ? item.submenu : null} key={item.id} />)}
+            {menuItemsData.map(item => <MenuItem item={item.title} key={item.id} />)}
         </ul>
         <button className="nav-btn">T</button>
     </div>
